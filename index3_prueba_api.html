@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>DeepValueWeb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      font-family: "Raleway", sans-serif
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="w3-content" style="max-width:1400px">
+    <!-- Header -->
+
+    <header class="w3-container w3-center w3-padding-32">
+      <h1><b>Gestión de Cartera</b></h1>
+      <p>Aprenderemos estratégias de gestión de cartera, estableceremos las bases de una cartera, construiremos una
+        cartera ficticia
+        y compararemos su rendimiento con el de el S&P 500.
+      </p>
+    </header>
+    <ul>
+      <li>
+        <p><a href="#marcador4">Construcción de una cartera</a></p>
+      </li>
+      <li>
+        <p><a href="#marcador5">Gestión de Cartera</a></p>
+      </li>
+      <li>
+        <p><a href="#marcador6">Cartera Ficticia VS S&P 500 </a></p>
+      </li>
+      
+</ul>
+    <!-- Grid -->
+    <div class="w3-row">
+      <!--Blog entries -->
+      <div class="w3-col l12 s12">
+        <!-- Blog entry Construcción -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-light-grey">
+            <h4><b><a id="marcador4">Construcción de una cartera</a></b></h4>
+          </div>
+
+          <div class="w3-container w3-hoverable w3-white" style="justify-content: center; align-items: center;">
+            <p>Antes de construir una cartera hay una serie de preguntas que todo inversor debe de hacerse y conocer su
+              respuesta. Estas preguntas
+              son referidas a la edad del inversor, aversión al riesgo, grado de conocimientos financieros, en qué
+              círculo de competencia te sientes
+              cómodo analizando acciones, a qué plazo de tiempo están horientadas tus inversiones, cuál es tu capacidad
+              de ahorro, cuál es la cantidad
+              con la que vas a empezar a invertir y si vas a hacer aportaciones semanales/mensuales/anuales a la
+              cartera.<br><br>
+
+              Una vez establecidas todas estas cuestiones, cada inversor debe de seguir una estrategia de inversión que
+              se corresponda con los objetivos
+              buscados. Es decir, no debería de invertir igual una persona con una estrategia de inversisón enfocada en
+              el crecimiento y rentabilidad, con muchos
+              años por delante. Que una persona de elevada edad que tiene su patrimonio y su objetivo es mantenerlo o
+              incrementarlo tomando los mínimos riesgos posibles.
+              <br><br>
+
+              Existen diferentes clases de activos en los que un inversor puede invertir. Algunos son más simples como
+              cuentas remuneradas,
+              fondos monetarios, bonos y letras del tesoro. Y otros activos son más complejos como pueden las acciones,
+              opciones sobre acciones,
+              divisas, materias primas,futuros,REITs (o SOCIMIS en español), criptomonedas, arte, inmobiliario,
+              relojes... En Este último grupo de activos, las rentabilidades
+              que ofrecen generalmente son más elevadas que el primer grupo, pero tienen potencialmente más
+              riesgo.<br><br>
+
+              También, dentro de un mismo activo, existen diferentes categorías o temáticas de inversión. Por ejemplo,
+              en el caso de los bonos se
+              pueden comprar bonos de distinta duración, bonos protegidos contra la inflación (TIPS), bonos
+              corporativos... Con las acciones ocurre
+              algo similar, aunque no dejan de ser el mismo producto financiero, existen diferentes motivos por los
+              cuales un inversor posee unas u otras.
+              Algunos de estos motivos son los dividendos, acciones de alto crecimiento (growth), son empresas cíclicas
+              y se conoce el ciclo de este tipo
+              de acciones, son acciones que tienen un valor que el mercado no está reconociendo (value), empresas bajo
+              reestructuración, excisiones,
+              acciones de alta capitalización, etc. Como inversores debemos de conocer todas estas temáticas de
+              inversión y elegir cuál es la que
+              mejor se adapta con nuestros objetivos y filosofía de inversión.<br><br>
+
+              Un factor de gran relevancia que hemos de tener en cuenta a la hora de construir una cartera es la
+              diversificación. Ya sea entre
+              diferentes categorías dentro de un mismo activo, como de diferentes activos. La diversificación sirve para
+              reducir el riesgo, en el caso de
+              que alguno de los activos pierda valor, la revalorización de otros puede compensar esta pérdida. Como bien
+              dice el dicho "No pongas
+              todos los huevos en la misma cesta".<br><br>
+
+              Para el caso particular de las acciones, diversificar es imprescindible. Pero, la sobrediversificación
+              también puede suponer un riesgo.
+              Esto se debe a que puede lastrar los rendimientos de la cartera y sin obtener una reducción adicional del
+              riesgo. Como podemos observar
+              en el siguiente gráfico:<br><br>
+            <figure style="text-align: center;">
+              <img
+                src="https://www.investopedia.com/thmb/iFrZ9vv_i_iRXoyJ4TjRm-a_9FI=/750x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/DiversificationMyth1-5c0584cb46e0fb000164e281"
+                style="width: 650px; height: auto;">
+            </figure><br><br>
+
+            El aumento del número de acciones en una cartera, no solo No disminuye el riesgo de la cartera. Sino que
+            también nos dificulta la
+            gestión óptima de una cartera, haciendo mucho más complicado el seguimiento de las empresas y sus resultados
+            financieros. Por ello,
+            hemos de encontrar un equilibrio a la hora de construir nuestra cartera.<br><br>
+
+            Aquí os dejo una tabla con los pros y contras de una cartera según el número de acciones.<br><br>
+
+            <table class="w3-table-all w3-light-grey w3-centered">
+              <tr>
+                <th>Tipo de Cartera</th>
+                <th>Número de acciones</th>
+                <th>Convicción</th>
+                <th>Gestión de Cartera</th>
+                <th>Riesgo</th>
+              </tr>
+              <tr>
+                <td>Concentrada</td>
+                <td>5-10</td>
+                <td>Alta</td>
+                <td>Sencilla</td>
+                <td>Medio Alto</td>
+              </tr>
+              <tr>
+                <td>Equilibrada</td>
+                <td>20</td>
+                <td>Media</td>
+                <td>Moderada</td>
+                <td>Moderado</td>
+              </tr>
+              <tr>
+                <td>Sobrediversificada</td>
+                <td>+30</td>
+                <td>Media-Baja</td>
+                <td>Compleja</td>
+                <td>Moderado</td>
+              </tr>
+            </table>
+            <br><br>
+            Por último, os voy a presentar algunas de las estrategias de inversión más utilizadas.
+            La primera es la famosa 50-50, Esta estrategia es muy utilizada en la gestión profesional de activos,
+            principalmente adoptada
+            por fondos de inversión. Consiste en tener un 50% de la cartera en bonos y el otro 50% restante en acciones.
+            Los bonos aportan
+            un crecimiento moderado a la cartera y bajo riesgo, el otro 50% restante aporta más rentabilidad y riesgo.
+            Existen variaciones de esta
+            estrategia como es el 75-25 y variaciones de ese tipo. La segunda estrategia de inversión, consiste en
+            diversificar los activos
+            en 2 grandes tipos. Uno de ellos produce un flujo de caja que puede ser reinvertido, ya sea en si mismo o en
+            el otro tipo, que son
+            acciones. Así, se está constantemente reinvirtiendo y proporcionando liquidez por si hay oportunidades en el
+            mercado. El primer tipo
+            de activo puede ser inversiones inmobiliarias, ya sean directamente o indirectamente (REITs o SOCIMIs).
+            Acciones que paguen elevados
+            dividendos (Acciones como Altria, PepsiCo, Philip Morris, Nestlé...) o cualquier otro tipo de inversión que
+            proporcione flujo de caja
+            <br><br>
+
+            </p>
+          </div>
+        </div>
+        <!-- Blog entry Gestión -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-light-grey">
+            <h4><b><a id="marcador5">Gestión de Cartera</a></b></h4>
+          </div>
+
+          <div class="w3-container w3-hoverable w3-white" style="justify-content: center; align-items: center;">
+            <p>
+              Antes de empezar a gestionar una cartera, recomiendo previamente haberse leído el apartado anterior donde
+              se establecen los principios
+              básicos que una cartera debería de seguir. Una vez dicho esto, podemos empezar con algunos tips para
+              gestionar tu cartera de forma efectiva.
+              <br><br>
+            <ul>
+
+              <li>
+                <p>
+                  <b>Gestión emocional:</b> manejar correctamente las emociones y ser racional. Saber cuándo comprar y
+                  vender y no dejarse llevar por el pánico
+                  que muchas veces nos hace tomar decisiones de inversión equivocadas y perdernos grandes oportunidades.
+                  Una buena gestión emocional es
+                  de lo más importante si se quieren obtener mejores resultados que la media del mercado.<br>
+                </p>
+              </li>
+
+              <li>
+                <p><b> No Enamorarse de una acción</b>. Esto significa que no hay que estar atados emocionalmente a una
+                  acción,
+                  ya sea porque nos gusta lo que hace, nos parece puntera, nos gusta mucho el equipo directivo. Aquí voy
+                  a poner como ejemplo a Tesla.
+                  Mucha gente invierte en Tesla por Elon Musk (Aquí no vamos a valorar qué nos parece Elon Musk, no es
+                  el objetivo del blog). El
+                  hecho de que se haya asociado políticamente con Trump no es algo que beneficie a Tesla.
+                  Principalmente, porque gran parte de los
+                  compradores de vehículos eléctricos son demócratas 
+                  <a href="https://edition.cnn.com/2024/02/21/us/electric-vehicles-republican-voters-dg/index.html">(Documentación)</a>.
+                  También, entrometerse en la política de otros países como Alemania, es algo
+                  que también puede afectar negativamente a su imagen y por lo tanto a sus ventas en Europa y el resto
+                  del mundo. Esto a largo plazo,
+                  puede ser que no afecte mucho a la empresa. Pero, a corto plazo puede provocar caídas fuertes si se
+                  deterioran los fundamentales.
+                  Por ello, es muy importante monitorizar lo que hace la empresa, y si hay que vender, se vende.<br></p>
+              </li>
+
+              <li>
+                <p> <b>Analizar los resultados de las compañías</b>, no
+                  dejarse llevar por cómo sean las reacciones del mercado después de publicar los resultados. Así,
+                  desarrollaremos un espíritu crítico
+                  y no nos dejaremos llevar por el sentimiento del mercado. También, si vas a informarte de una
+                  compañía, busca fuentes fiables de
+                  información y consulta distintas fuentes. Cuando busques análisis o tesis de inversión ten en cuenta
+                  que estos van a estar
+                  sesgados por la opinión del autor, por lo que es recomendable leer varios y hacer tu propio análisis.
+                  <br>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Revisa tus posiciones</b>, incrementando el número de acciones en empresas que hayan bajado sin
+                  ninguna razón aparente o
+                  cambio en los fundamentales. Esto implica reducir
+                  posiciones en otras acciones que hayan subido mucho y no tengan mucha subida potencial o menor margen
+                  de seguridad. Como
+                  si fuesen vasos comunicantes. Pero, esta situación hay que revertirla cuando se pueda y no sobrecargar
+                  mucho las posiciones de la cartera
+                  <br>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Ten una watchlist</b> o una lista de seguimiento acciones, facilita mucho las labores de
+                  monitorización de acciones. Así es
+                  mucho más fácil encontrar un buen momento para invertir y no tienes que ir una por una mirando cómo
+                  van las acciones.<br>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <b>Evita modas o acciones especulativas</b>. La bolsa no es un casino y a largo plazo el precio de una
+                  acción está correcionado
+                  con la evolución de la compañía y sus beneficios. Por lo que invertir en empresas que no aportan nada
+                  de valor es recomendable.
+                  Como puede ser el caso de Microestrategy, es una empresa que su principal actividad es poseer Bitcoin.
+                  Diluye a los accionistas emitiendo
+                  acciones y bonos para financiarse para comprar bitcoin. Cuando como inversor particular puedes
+                  invertir en criptoactivos tú directamente,
+                  sin diluciones ni deuda (destruir valor a los accionistas).<br>
+                </p>
+              </li>
+
+              <li>
+                <p>
+                  <b>Conoce tu círculo de competencia</b>. No inviertas en empresas que no conozcas a fondo a lo que se
+                  dedican. Esto no significa que
+                  no puedas invertir en empresas petroleras o de semiconductores. Pero, si lo vas a hacer infórmate a
+                  fondo cómo funciona, ya sea
+                  conociendo los procesos de fabricación, los fundamentos físicos en los que se sustenta, las ventajas
+                  competitivas que tiene sobre otros
+                  competidores. Ya sea por escala, costes, ventaja tecnológica, etc.
+
+                  <br>
+                </p>
+              </li>
+              <li>
+                <p>
+                  <b>Ten liquidez</b> saber cuándo acumular liquidez y cuando invertir esa liquidez no es tarea
+                  sencilla. Personalmente, no
+                  recomiendo invertir intentando predecir la macroeconomía ni la política monoetaria. Pero,
+                  cuando los mercados cotizan a unos múltiplos excesivamente altos (comparados con la media histórica),
+                  es recomendable tener
+                  un porcentaje de la cartera en forma de liquidez o en bonos de muy corta duración, para aprovechar la
+                  volatilidad e inyectar
+                  esta liquidez en los mercados en caso de caídas. <br>
+                </p>
+              </li>
+            </ul>
+
+            </p>
+          </div>
+        </div>
+        <!-- Blog entry CarteraFicticia -->
+        <div class="w3-card w3-margin">
+          <div class="w3-container w3-light-grey">
+            <h4><b><a id="marcador6">Cartera Ficticia VS S&P 500</a></b></h4>
+          </div>
+
+          <div class="w3-container w3-hoverable w3-white" style="justify-content: center; align-items: center;">
+            <p>Vamos a construir una cartera ficticia y compararla con el S&P 500.<br> </p>
+
+            <div class="w3-container w3-grey">
+              <h4 style="text-align: center"><b>*Disclaimer*</b></h4>
+              <p> Recordad que todo lo presentado en este blog no son recomendaciones de compra y centa. Todo lo que se
+                ve en este blog es
+                mi opinión, la información proporcionada tiene un carácter informativo y divulgativo.
+                Por lo tanto, NO me hago respondable del uso indebido de la información proporcionada. Invertir conlleva
+                sus riesgos.
+                Por los que todo inversor ha de hacer su análisis previo antes de tomar una decisión de inversión.</p>
+            </div>
+            <p> Las cartera ficticia que vamos a comparar contra el SP 500, va estar formada por 7 acciones, es una
+              cartera concentrada.
+              No es un ejemplo del todo real, porque no se va a gestionar nada la cartera. Se van a coger estas acciones
+              al precio del día
+              que estoy haciendo esto (fecha) y se va a comparar vs el SP 500 sin aumentar posiciones o rebalancear la
+              cartera.
+              Para ser justos, se va a comparar contra el rendimiento del SP 500 a día de hoy (fecha). Es decir, se va a
+              tomar como referencia
+              el SP 500 a (tantos puntos) a día (fecha) y se va a comparar su rendimiento respecto a este día. <br><br>
+
+              El rendimiento de esta cartera se mide en tiempo real, tomando como punto de referencia el precio de las
+              acciones a la fecha de hoy (fecha).
+              Me gustaría añadir, que no se juzguen estos resultados a corto plazo puesto que el mercado es muy volátil
+              en periodos cortos. El plazo de
+              tiempo al que están orientadas estas inversiones es a un periodo de tiempo medio-largo.<br><br>
+
+              Me gustaría añadir que en esta cartera ficticia no están todas las acciones que me gustarían. Hay algunas
+              empresas que me gustaría añadir
+              porque considero que son de gran calidad, pero los múltiplos a los que se encuentran actualmente son
+              exigentes. Algunas de estas empresas
+              son Teleperformance, Degiro, Nagarro y algunas otras. En el caso de añadir una de estas acciones a la
+              cartera y tener
+              que reestructurar la cartera.
+              Pondré una nota que la cartera se ha actualizado y de qué posiciones se ha sacado ese porcentaje para esa
+              acción. En el caso de hacer esto,
+              se hará un ajuste, porque si una empresa ha subido mucho y se desinvierte para otra posición, Aquí hay un
+              rendimiento global para la
+              cartera que hay que tener en cuenta.<br><br>
+
+              También,he de añadir que la API rest de finanzas que he utilizado solo puede buscar acciones que coticen
+              en Estados Unidos.
+              Por lo que acciones como Teleperformance, Degiro, Nagarro. No se han podido añadir a esta lista ni se
+              espera que se puedan.
+              Por ellos todas las acciones seleccionadas son estadounidenses o cotizan allí. Espero que esto no suponga
+              un problema, puesto
+              que esto un blog divulgativo y he utilizado todas las herramientas que están a disposición de manera
+              gratuita.<br><br>
+
+
+
+              Os dejo un listado de las acciones y de su peso en la cartera:
+            <h4><b>Fecha de "Compra" 15/03/2025</b></h4>
+
+            <table class="w3-table-all w3-light-grey w3-centered">
+              <tr>
+                <th>Acción</th>
+                <th>Porcentaje de cartera</th>
+                <th>Precio de "Compra"</th>
+              </tr>
+              <tr>
+                <td>Globant</td>
+                <td>20%</td>
+                <td>134$</td>
+              </tr>
+              <tr>
+                <td>Endava</td>
+                <td>20%</td>
+                <td>20,93$</td>
+              </tr>
+              <tr>
+              <tr>
+                <td>Alphabet (Google)</td>
+                <td>15%</td>
+                <td>167,67$</td>
+              </tr>
+              <tr>
+              <tr>
+                <td>Concentrix</td>
+                <td>15%</td>
+                <td>45,02$</td>
+              </tr>
+              <tr>
+                <td>Mercado libre</td>
+                <td>15%</td>
+                <td>2021,37$</td>
+              </tr>
+              <tr>
+                <td>Intel</td>
+                <td>7,5%</td>
+                <td>24,05$</td>
+              </tr>
+              <tr>
+                <td>PepsiCo</td>
+                <td>7,5%</td>
+                <td>148,59$</td>
+              </tr>
+            </table>
+
+            <div>
+              <h1>Cartera en tiempo Real</h1>
+          
+              <!--<label for="symbol">Símbolo de la Acción:</label>
+              <input type="text" id="symbol" placeholder="Ej: AAPL">
+              <button onclick="calc_cartera()">Consultar Acción</button> -->
+          
+              <h2>Valor de la cartera:</h2>
+              <p id="cartera_sumas">Esperando consulta...</p>
+              <p id="revalorizacion_cartera">Calculando rendimiento...</p>
+              <p id="operacion_jsonbin">Actualizando datos...</p>
+          
+              <svg width="800" height="400"></svg>
+          
+          
+          
+              <script>
+                  window.addEventListener('load', function () {
+                      //console.log('La primera función se ha ejecutado');
+                      calc_cartera()
+                  });
+          
+                  async function calc_cartera() {
+                      const apiKey = "cvba7fhr01qgjh40thsgcvba7fhr01qgjh40tht0"; // Sustituye con tu clave de Finnhub
+                      var ticker = ['MELI', 'GLOB', 'GOOG', 'CNXC', 'INTC', 'PEP', 'DAVA']; //Ticker de las accionesa a buscar
+                      const cap_inicial = 1000000;
+                      const cap_porcentajes = [0.15, 0.2, 0.15, 0.15, 0.075, 0.075, 0.2];
+                      const cap_precioIn = [2020, 133, 167, 45, 24, 148, 20];
+                      var numero_acciones = [74, 1503, 898, 3333, 3125, 506, 10000];
+                      var longitud_array = ticker.length;
+                      var cartera_final = [];
+                      var suma_cartera = 0;
+                      var revalorizacion_cartera = 0;
+          
+          
+                      for (var i = 0; i < longitud_array; i++) {
+          
+          
+                          const url = `https://finnhub.io/api/v1/quote?symbol=${ticker[i]}&token=${apiKey}`;
+                          console.log(url);
+                          var incr_accion = 0;
+                          var num_acciones = 0;
+                          var posicion_accion = [];
+                          try {
+                              const response = await fetch(url);
+                              const data = await response.json();
+          
+                              if (data.c) {
+                                  precio_accion = data.c;
+                                  console.log(precio_accion);
+                                  incr_accion = ((precio_accion - cap_precioIn[i]) / cap_precioIn[i]) * 100;
+                                  console.log(incr_accion);
+                                  // num_acciones=Math.trunc((cap_inicial*cap_porcentajes[i])/cap_precioIn[i]);
+                                  // console.log(num_acciones);
+                                  //numero_acciones.push(num_acciones);
+                                  // console.log(numero_acciones);
+          
+                                  posicion_accion = numero_acciones[i] * precio_accion;
+                                  console.log('La cartera es: ' + posicion_accion);
+                                  cartera_final.push(posicion_accion);
+          
+          
+          
+          
+                              } else {
+                                  document.getElementById("cartera_sumas").innerText = "Error: Símbolo no encontrado.";
+                              }
+                          } catch (error) {
+                              console.error("Error al obtener datos:", error);
+                              document.getElementById("cartera_sumas").innerText = "Error al obtener datos.";
+                          }
+          
+                      }
+                      console.log(cartera_final);
+          
+                      //cartera_final +=cartera_final[i];
+          
+                      // Operacion valor cartera
+                      for (var i = 0; i < longitud_array; i++) {
+          
+                          suma_cartera += cartera_final[i];
+          
+                      }
+          
+                      document.getElementById("cartera_sumas").innerText = Math.round(suma_cartera) + ' $';
+                      revalorizacion_cartera = ((suma_cartera - cap_inicial) / cap_inicial)*100;  
+                      revalorizacion_cartera= Math.round (revalorizacion_cartera*100)/100;    //Redondeo a 2 decimales
+                      document.getElementById("revalorizacion_cartera").innerText = revalorizacion_cartera + '%';
+                      //agregamos dato
+                      const nuevoDato = {
+                          "fecha": new Date().toISOString(), // Fecha actual en formato ISO
+                          "valor": suma_cartera,                  // Nuevo valor
+                          "rendimiento": revalorizacion_cartera                // Nuevo rendimiento
+                      };
+          
+                      const ultimaFecha = await obtenerUltimaFecha();
+                      console.log("Última fecha:", ultimaFecha);
+          
+                      //Error en la consola al llamar a la funcion obtenerUltimaFecha()
+          
+                      const d1 = new Date(ultimaFecha);
+                      const hoy = new Date();
+          
+                      if (d1.getFullYear() === hoy.getFullYear() &&
+                          d1.getMonth() === hoy.getMonth() &&
+                          d1.getDate() === hoy.getDate()) {
+                          console.log("Las fechas son iguales (sin contar la hora). No hago nada");
+                      } else {
+                          console.log("Las fechas son diferentes. Agrego dato");
+                          agregarDato(nuevoDato);
+                      }
+          
+                  }
+          
+          
+          
+                  //Función para actualizar jsonbin
+          
+                  const apiKey = "$2a$10$c/OI3gdCKjrPOqdZGPtbNeqVLDGd/Ej8Nucvfg5i/zF011ykmFKju"; // Reemplaza con tu clave de JSONBin.io
+                  const binId = "67d6e3218a456b796676eefc";    // Reemplaza con el ID de tu bin
+          
+                  async function agregarDato(nuevoDato) {
+          
+                      try {
+                          // 1️⃣ Obtener los datos actuales del bin
+                          let response = await fetch(`https://api.jsonbin.io/v3/b/${binId}`, {
+                              method: "GET",
+                              headers: { "X-Master-Key": apiKey }
+                          });
+                          let data = await response.json();
+          
+                          // 2️⃣ Añadir el nuevo dato al array "datos"
+                          data.record.datos.push(nuevoDato);
+          
+                          // 3️⃣ Actualizar el bin con los nuevos datos
+                          let updateResponse = await fetch(`https://api.jsonbin.io/v3/b/${binId}`, {
+                              method: "PUT",
+                              headers: {
+                                  "Content-Type": "application/json",
+                                  "X-Master-Key": apiKey
+                              },
+                              body: JSON.stringify(data.record)
+                          });
+          
+                          let result = await updateResponse.json();
+                          document.getElementById("operacion_jsonbin").innerText = JSON.stringify(result, null, 2);
+                          console.log("Bin actualizado:", result);
+          
+                      } catch (error) {
+                          console.error("Error al actualizar el bin:", error);
+                          document.getElementById("operacion_jsonbin").innerText = "Error al actualizar el bin.";
+                      }
+                  }
+          
+                  //Recuperar última fecha
+                  async function obtenerUltimaFecha() {
+                      try {
+                          // Hacer la solicitud GET al bin
+                          let response = await fetch(`https://api.jsonbin.io/v3/b/${binId}`, {
+                              method: "GET",
+                              headers: { "X-Master-Key": apiKey }
+                          });
+          
+                          let data = await response.json();
+          
+                          // Extraer el array "datos"
+                          let datos = data.record.datos;
+          
+          
+                          // Obtener la última fecha (último elemento del array)
+                          let ultimaFecha = datos[datos.length - 1].fecha;
+                          //console.log("Última fecha:", ultimaFecha);
+                          return ultimaFecha;
+          
+          
+                      } catch (error) {
+                          console.error("Error al obtener los datos:", error);
+                      }
+                  }
+          
+                  // Gráfico D3
+                  const url = `https://api.jsonbin.io/v3/b/${binId}`;
+          
+                  fetch(url, {
+                      method: 'GET',
+                      headers: {
+                          'X-Master-Key': apiKey
+                      }
+                  })
+                      .then(response => response.json())
+                      .then(json => {
+                          const datos = json.record.datos.map(d => ({
+                              fecha: new Date(d.fecha),
+                              valor: d.valor
+                          }));
+          
+                          dibujarGrafico(datos);
+                      })
+                      .catch(error => console.error('Error al cargar datos:', error));
+          
+                  function dibujarGrafico(datos) {
+                      const svg = d3.select("svg");
+                      const width = +svg.attr("width") - 60;
+                      const height = +svg.attr("height") - 60;
+                      const margin = { top: 20, right: 20, bottom: 40, left: 50 };
+          
+                      const x = d3.scaleTime()
+                          .domain(d3.extent(datos, d => d.fecha))
+                          .range([margin.left, width]);
+          
+                      const y = d3.scaleLinear()
+                          .domain([d3.min(datos, d => d.valor) * 0.999, d3.max(datos, d => d.valor) * 1.001])
+                          .range([height, margin.top]);
+          
+                      svg.append("g")
+                          .attr("transform", `translate(0,${height})`)
+                          .call(d3.axisBottom(x).ticks(5).tickFormat(d3.timeFormat("%Y-%m-%d")));
+          
+                      svg.append("g")
+                          .attr("transform", `translate(${margin.left},0)`)
+                          .call(d3.axisLeft(y));
+          
+                      const line = d3.line()
+                          .x(d => x(d.fecha))
+                          .y(d => y(d.valor));
+          
+                      svg.append("path")
+                          .datum(datos)
+                          .attr("fill", "none")
+                          .attr("stroke", "steelblue")
+                          .attr("stroke-width", 2)
+                          .attr("d", line);
+          
+                      svg.selectAll("circle")
+                          .data(datos)
+                          .enter()
+                          .append("circle")
+                          .attr("cx", d => x(d.fecha))
+                          .attr("cy", d => y(d.valor))
+                          .attr("r", 4)
+                          .attr("fill", "red");
+                  }
+          
+          
+          
+          
+              </script>
+              </div>
+
+
+            <br><br>
+            <h4>Información sobre la cartera y su Tamaño:</h4><br><br>
+
+            Para esta cartera se ha escogido un capital inicial de 1 Millon de Euros. Esto se debe principalmente a que
+            a la hora de hacer
+            una cartera, obtener los porcentajes de peso de cada una de las acciones es más facil que con un capital
+            menor. Si se
+            hubiese elegido un capital menor como por ejemplo de 10.000$ que era mi idea inicial. Acciones como Mercado
+            Libre, que cada acción
+            vale 2000$ tendrían que tener un peso mayor obligatoriamente del que me gustaría en la cartera (un 15%). Soy
+            consciente de que
+            no es una cantidad de dinero realista. Pero hacerlo así facilita esta labor y es más sencilla a la hora de
+            hacer pruebas. También,
+            si te gusta esta cartera, como particular puedes investigar cada una de las empresas y si te convence, y
+            deseas invertir en ella
+            puedes modificar los porcentajes a lo que consideres adecuado.<br><br>
+            
+            <!-- Disclaimer 2 -->
+            <div class="w3-container w3-grey">
+              <h4 style="text-align: center"><b>*Disclaimer*</b></h4>
+              <p> La página web y el código que se ha utilizado en esta página es libre. Por lo que la puedes
+                modificar y hacer a tu gusto.
+                Pero, <b>las herramientas que he utilizado y las claves API que hay en el código, están asociadas a mis
+                cuentas. Por lo que NO han de
+                utilizarse. </b>Las herramientas que uso como JSONbin o la API rest Finnhub. Tienen un número limitado de
+                peticiones que se pueden hacer (de forma gratuita)
+                y utilizar mis claves y mi código sin modificar, puede hacer que No funcione correctamente la página web y
+                me quede sin peticiones.
+                <b>No cuesta nada registrarse en las páginas y obtener una clave Api propia.</b><br><br>
+
+                Si quieres personalizarte una cartera y necesitas ayuda. Puedes ponerte en contacto connmigo. He dispuesto mi correo en la
+                página principal y estoy encantado de recibir cualquier tipo de feedback o sugerencias sobre el blog. También, puedes 
+                solicitarme el código de la página.</p>
+            </div>
+            </p>
+          </div>
+        </div>
+
+
+      </div>
+
+</body>
+
+</html>
